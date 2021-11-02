@@ -5,7 +5,7 @@ pipeline {
       {
         steps{
           echo 'Running build automation'
-          sh './gradlew build --no-demeon'
+          sh './gradlew build '
           archiveArifacts artifacts: 'dist/trainschedule.zip'
         }
       }
